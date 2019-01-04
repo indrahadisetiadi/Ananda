@@ -10,11 +10,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.ging.starter_project.util.SessionManager;
+
 public class FragmentPertumbuhan extends Fragment {
 
     private RecyclerView recyclerView;
     private AdapterPertumbuhan mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
+    SessionManager sessionManager;
 
     public FragmentPertumbuhan() {
         // Required empty public constructor
@@ -25,7 +28,8 @@ public class FragmentPertumbuhan extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.fragment_pertumbuhan,container,false);
-        getActivity().setTitle("Perumbuhan Anak");
+        sessionManager = new SessionManager(getContext());
+        getActivity().setTitle("Perumbuhan Anak - " + sessionManager.getNamaAnak());
         recyclerView = (RecyclerView) view.findViewById(R.id.pertumbuhan_recycleview);
         mLayoutManager = new LinearLayoutManager(container.getContext());
         recyclerView.setLayoutManager(mLayoutManager);

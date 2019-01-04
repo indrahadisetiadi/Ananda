@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="350dp"
-    android:layout_height="475dp"
+    android:layout_height="wrap_content"
     android:background="@color/colorWhite"
     android:padding="5dp"
     android:layout_gravity="center">
     <TextView
-        android:id="@+id/txtclose"
+        android:id="@+id/btnCloseAddForm"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:textColor="@color/colorPrimaryDark"
@@ -24,10 +25,10 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:fontFamily="serif"
-            android:text="Register"
+            android:text="Tambah Data Pertumbuhan"
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
-            android:textSize="25dp"
+            android:textSize="20dp"
             android:textStyle="bold" />
 
         <LinearLayout
@@ -41,49 +42,8 @@
                 android:layout_height="25dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
-                android:background="@drawable/email"
-                android:backgroundTint="@color/colorGreyDark"
-                android:orientation="horizontal"></LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="40dp"
-                android:background="@drawable/square_box_text"
-                android:backgroundTint="@color/colorGreyDark"
-                android:orientation="horizontal">
-
-                <EditText
-                    android:id="@+id/txt_email_reg"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:background="@android:color/transparent"
-                    android:backgroundTint="@color/colorWhite"
-                    android:hint="E-mail"
-                    android:textAlignment="center"
-                    android:textColor="@color/colorWhite"
-                    android:textColorHint="@color/colorWhite"
-                    android:textSize="14dp" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="26dp"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="5dp"
                 android:background="@drawable/user_avatar"
-                android:backgroundTint="@color/colorGreyDark"
+                android:backgroundTint="@color/colorGrey"
                 android:orientation="horizontal"></LinearLayout>
 
             <LinearLayout
@@ -92,11 +52,11 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="40dp"
                 android:background="@drawable/square_box_text"
-                android:backgroundTint="@color/colorGreyDark"
+                android:backgroundTint="@color/colorGrey"
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/txt_nama_reg"
+                    android:id="@+id/txt_form_pertumbuhan_tinggi"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
@@ -104,15 +64,14 @@
                     android:layout_weight="1"
                     android:background="@android:color/transparent"
                     android:backgroundTint="@color/colorWhite"
-                    android:hint="Nama"
+                    android:hint="Tinggi/Panjang(cm)"
                     android:textAlignment="center"
-                    android:textColor="@color/colorWhite"
-                    android:textColorHint="@color/colorWhite"
+                    android:textColor="@color/colorGreyDark"
+                    android:textColorHint="@color/colorGreyDark"
                     android:textSize="14dp"/>
             </LinearLayout>
         </LinearLayout>
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -125,7 +84,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/padlock"
-                android:backgroundTint="@color/colorGreyDark"
+                android:backgroundTint="@color/colorGrey"
                 android:orientation="horizontal">
 
             </LinearLayout>
@@ -136,76 +95,80 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="40dp"
                 android:background="@drawable/square_box_text"
-                android:backgroundTint="@color/colorGreyDark"
+                android:backgroundTint="@color/colorGrey"
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/txt_password_reg"
+                    android:id="@+id/txt_form_pertumbuhan_beratbadan"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="1"
                     android:background="@android:color/transparent"
-                    android:backgroundTint="@color/colorWhite"
-                    android:hint="Password"
+                    android:backgroundTint="@color/colorGreyDark"
+                    android:hint="Berat Badan (Kg)"
                     android:textAlignment="center"
-                    android:textColor="@color/colorWhite"
-                    android:textColorHint="@color/colorWhite"
-                    android:textSize="14dp"
-                    android:inputType="textPassword"/>
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/padlock"
-                android:backgroundTint="@color/colorGreyDark"
-                android:orientation="horizontal">
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="40dp"
-                android:background="@drawable/square_box_text"
-                android:backgroundTint="@color/colorGreyDark"
-                android:orientation="horizontal">
-
-                <EditText
-                    android:id="@+id/txt_confirm_password_reg"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:background="@android:color/transparent"
-                    android:backgroundTint="@color/colorWhite"
-                    android:hint="Password Confirmation"
-                    android:inputType="textPassword"
-                    android:textAlignment="center"
-                    android:textColor="@color/colorWhite"
-                    android:textColorHint="@color/colorWhite"
+                    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:textColor="@color/colorGreyDark"
+                    android:textColorHint="@color/colorGreyDark"
                     android:textSize="14dp" />
             </LinearLayout>
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/padlock"
+                android:backgroundTint="@color/colorGrey"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/square_box_text"
+                android:backgroundTint="@color/colorGrey"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/txt_form_pertumbuhan_lingkar_kepala"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@color/colorGreyDark"
+                    android:hint="Lingkar Kepala"
+                    android:textAlignment="center"
+                    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:textColor="@color/colorGreyDark"
+                    android:textColorHint="@color/colorGreyDark"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
 
     </LinearLayout>
 
 
     <TextView
-        android:id="@+id/btn_register_pop"
+        android:id="@+id/btn_add_pertumbuhan_pop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="90dp"
@@ -214,10 +177,11 @@
         android:background="@drawable/button_signup"
         android:gravity="center_horizontal"
         android:padding="10dp"
-        android:text="Register"
+        android:text="Add Data"
         android:textColor="@color/colorWhite"
         android:clickable="true"
         android:focusable="true"
-        android:foreground="?android:attr/selectableItemBackgroundBorderless"/>
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_marginBottom="40px"/>
 
 </LinearLayout>

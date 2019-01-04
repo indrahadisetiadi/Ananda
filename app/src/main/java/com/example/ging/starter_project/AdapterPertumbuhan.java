@@ -77,6 +77,7 @@ public class AdapterPertumbuhan extends RecyclerView.Adapter<AdapterPertumbuhan.
         holder.txt_lingkar_kepala_pertumbuhan.setText(pertumbuhan.getLingkar_kepala().toString());
         if (sessionManager.getGenderAnak().equals("Perempuan")) {
             holder.linear_decoration.setBackgroundColor(Color.parseColor("#FF4081"));
+            holder.txt_nama_pertumbuhan.setTextColor(Color.parseColor("#FF4081"));
         }
         // loading album cover using Glide library
 
