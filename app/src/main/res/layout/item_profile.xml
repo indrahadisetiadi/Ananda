@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--rest of the code-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0.0px"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            card_view:cardElevation="10dp"
+            card_view:cardPreventCornerOverlap="false">
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:id="@+id/img_anak"
+                    android:layout_width="120dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/boy"
+                    android:orientation="vertical">
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp">
+                    <TextView
+                        android:id="@+id/txt_profile_nama_anak"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:text="Abdullah Umar" />
+                    <TextView
+                        android:id="@+id/txt_profile_gender_anak"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:text="Laki-Laki" />
+                    <TextView
+                        android:id="@+id/txt_profile_umur_anak"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:text="4 Bulan" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingRight="8dp">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/square_box"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/btn_lihat_pertumbuhan"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="8sp"
+                                android:text="Lihat Pertumbuhan" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/square_box"
+                            android:layout_marginLeft="5dp">
+                            <TextView
+                                android:id="@+id/btn_lihat_perkembangan"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="8sp"
+                                android:text="Lihat Perkembangan" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>
