@@ -2,9 +2,9 @@ package com.example.ging.starter_project.model;
 
 public class Pertumbuhan {
     Double berat_badan, tinggi_badan, lingkar_kepala;
-    String bbu, pbu, bbpb, lku;
+    String bbu, pbu, bbpb, lku, date_pengkukuran;
 
-    public Pertumbuhan(Double berat_badan, Double tinggi_badan, Double lingkar_kepala, String bbu, String pbu, String bbpb, String lku) {
+    public Pertumbuhan(Double berat_badan, Double tinggi_badan, Double lingkar_kepala, String bbu, String pbu, String bbpb, String lku, String date_pengukuran) {
         this.berat_badan = berat_badan;
         this.tinggi_badan = tinggi_badan;
         this.lingkar_kepala = lingkar_kepala;
@@ -12,6 +12,15 @@ public class Pertumbuhan {
         this.pbu = pbu;
         this.bbpb = bbpb;
         this.lku = lku;
+        this.date_pengkukuran = date_pengukuran;
+    }
+
+    public String getDate_pengkukuran() {
+        return date_pengkukuran;
+    }
+
+    public void setDate_pengkukuran(String date_pengkukuran) {
+        this.date_pengkukuran = date_pengkukuran;
     }
 
     public Double getBerat_badan() {

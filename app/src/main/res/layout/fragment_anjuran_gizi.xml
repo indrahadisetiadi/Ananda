@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="?attr/colorPrimary">
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bayi sampai usia 6 bulan"
+                android:textStyle="bold"
+                android:textColor="@color/colorGreyDark"
+                android:textSize="15sp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Berikan ASI sesuai keinginan anak, paling sedikit 8 kali sehari, pagi, siang, maupun malam. Jangan diberi makanan atau minuman lain selain ASI."
+                android:textColor="@color/colorGreyDark"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Umur 6-9 bulan"
+                android:textStyle="bold"
+                android:textColor="@color/colorGreyDark"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="10"
+                android:text=" - Teruskan pemberian ASI . \n
+- Mulai memberikan makanan pendamping ASI, seperti bubur susu, pisang, pepaya lumat halus, air jeruk, air tomat saring, dan sebagainya. \n
+- Secara bertahap sesuai pertumbuhan umur, berikan bubur tim lumat, ditambah telur/ayam/ikan/tempe/tahu/daging sapi/wortel/bayam/kacang hijau/santan/minyak. \n
+- Setiap hari diberikan makan sebagai berikut: \n
+      6 bulan: 2 x 6 sendok makan peres \n
+      7 bulan: 2-3 x 7 sendok makan peres \n
+      8 bulan: 3 x 8 sendok makan peres"
+                android:textColor="@color/colorGreyDark"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Umur 9-12 bulan"
+                android:textStyle="bold"
+                android:textColor="@color/colorGreyDark"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" - Teruskan pemberian ASI. \n
+- Berikan makanan pendamping ASI (MPASI) yang lebih padat dan kasar seperti bubur, nasi tim, nasi lembek. \n
+- Tambahkan telur/ayam/ikan/tempe/tahu/daging sapi/wortel/bayam/santan/minyak. \n
+- Setiap hari (pagi/siang/malam) berikan makanan berikut: \n
+      9 bulan: 3 x 9 sendok makan peres \n
+      10 bulan: 3 x 10 sendok makan peres \n
+      11 bulan: 3 x 11 sendok makan peres \n
+- Beri makanan selingan 2 kali sehari (buah, biskuit, kue) diantara waktu makan. \n"
+                android:textColor="@color/colorGreyDark"
+                android:textSize="15sp"
+                android:maxLines="10"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Umur 12-24 bulan"
+                android:textStyle="bold"
+                android:textColor="@color/colorGreyDark"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" - Teruskan pemberian ASI. \n
+- Berikan makanan keluarga secara bertahap sesuai kemampuan anak. \n
+- Berikan 3 kali sehari, sebanyak 1/3 porsi makan orang dewasa terdiri dari nasi, lauk pauk, sayur, dan buah. \n
+- Beri makan selingan 2 kali diantara waktu makan (biskuit, kue). \n"
+                android:textColor="@color/colorGreyDark"
+                android:textSize="15sp"
+                android:maxLines="10"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Umur 24 bulan atau lebih"
+                android:textStyle="bold"
+                android:textColor="@color/colorGreyDark"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Beri makanan keluarga 3 kali sehari 1/3 \n
+- 1/2 porsi makan orang dewasa yang terdiri dari nasi, lauk pauk, sayur, dan buah. \n
+- Berikan makanan selingan kaya gizi 2 kali sehari diantara waktu makan. \n"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

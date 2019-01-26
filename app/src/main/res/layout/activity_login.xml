@@ -145,6 +145,7 @@
                     android:textSize="17dp"
                     android:clickable="true"
                     android:focusable="true"
+
                     android:foreground="?android:attr/selectableItemBackgroundBorderless"/>
 
             </LinearLayout>

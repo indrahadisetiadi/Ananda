@@ -8,7 +8,7 @@
     android:padding="5dp"
     android:layout_gravity="center">
     <TextView
-        android:id="@+id/btnCloseAddForm"
+        android:id="@+id/btnCloseAddFormPertumbuhan"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:textColor="@color/colorPrimaryDark"
@@ -64,7 +64,7 @@
                     android:layout_weight="1"
                     android:background="@android:color/transparent"
                     android:backgroundTint="@color/colorWhite"
-                    android:hint="Tinggi/Panjang(cm)"
+                    android:hint="Tinggi/Panjang (cm)"
                     android:textAlignment="center"
                     android:textColor="@color/colorGreyDark"
                     android:textColorHint="@color/colorGreyDark"
@@ -109,7 +109,6 @@
                     android:backgroundTint="@color/colorGreyDark"
                     android:hint="Berat Badan (Kg)"
                     android:textAlignment="center"
-                    android:foreground="?android:attr/selectableItemBackgroundBorderless"
                     android:gravity="center"
                     android:textColor="@color/colorGreyDark"
                     android:textColorHint="@color/colorGreyDark"
@@ -154,7 +153,6 @@
                     android:backgroundTint="@color/colorGreyDark"
                     android:hint="Lingkar Kepala"
                     android:textAlignment="center"
-                    android:foreground="?android:attr/selectableItemBackgroundBorderless"
                     android:gravity="center"
                     android:textColor="@color/colorGreyDark"
                     android:textColorHint="@color/colorGreyDark"

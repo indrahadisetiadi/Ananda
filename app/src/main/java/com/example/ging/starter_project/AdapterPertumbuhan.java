@@ -33,7 +33,7 @@ public class AdapterPertumbuhan extends RecyclerView.Adapter<AdapterPertumbuhan.
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView txt_nama_pertumbuhan, txt_umur_pertumbuhan, txt_gender_pertumbuhan,
                 txt_berat_badan_pertumbuhan, txt_bbu, txt_panjang_badan_pertumbuhan, txt_pbu,
-                txt_bbpb, txt_lingkar_kepala_pertumbuhan, txt_lku;
+                txt_bbpb, txt_lingkar_kepala_pertumbuhan, txt_lku, txt_waktu_pemeriksaan;
         public LinearLayout linear_decoration;
 
         public MyViewHolder(View view) {
@@ -48,6 +48,7 @@ public class AdapterPertumbuhan extends RecyclerView.Adapter<AdapterPertumbuhan.
             txt_bbpb = (TextView) view.findViewById(R.id.txt_bbpb_pertumbuhan);
             txt_lingkar_kepala_pertumbuhan = (TextView) view.findViewById(R.id.txt_lingkar_kepala_pertumbuhan);
             txt_lku = (TextView) view.findViewById(R.id.txt_lku_pertumbuhan);
+            txt_waktu_pemeriksaan = (TextView)view.findViewById(R.id.txt_waktu_pemeriksaan_pertumbuhan);
             linear_decoration = (LinearLayout)view.findViewById(R.id.linear_decoration);
         }
     }
@@ -65,16 +66,17 @@ public class AdapterPertumbuhan extends RecyclerView.Adapter<AdapterPertumbuhan.
     public void onBindViewHolder(final MyViewHolder holder, int position) {
         final Pertumbuhan pertumbuhan = data_pertumbuhan.get(position);
         sessionManager = new SessionManager(mContext);
+        holder.txt_waktu_pemeriksaan.setText(pertumbuhan.getDate_pengkukuran());
         holder.txt_nama_pertumbuhan.setText(sessionManager.getNamaAnak());
         holder.txt_gender_pertumbuhan.setText(sessionManager.getGenderAnak());
         holder.txt_umur_pertumbuhan.setText(sessionManager.getUmurAnak().toString() + " Bulan");
-        holder.txt_berat_badan_pertumbuhan.setText(pertumbuhan.getBerat_badan().toString());
+        holder.txt_berat_badan_pertumbuhan.setText("Berat Badan : " + pertumbuhan.getBerat_badan().toString() + " Kg");
         holder.txt_bbu.setText("Berat Badan Menurut Umur - " +pertumbuhan.getBbu());
-        holder.txt_panjang_badan_pertumbuhan.setText(pertumbuhan.getTinggi_badan().toString());
+        holder.txt_panjang_badan_pertumbuhan.setText("Panjang / Tinggi Badan : " +pertumbuhan.getTinggi_badan().toString()+" cm");
         holder.txt_pbu.setText("Panjang Badan Menurut Umur - " + pertumbuhan.getPbu());
         holder.txt_bbpb.setText("Berat Badan Menurut Panjang Badan - " + pertumbuhan.getBbpb());
         holder.txt_lku.setText("Lingkar Kepala Menurut Umur - " + pertumbuhan.getLku());
-        holder.txt_lingkar_kepala_pertumbuhan.setText(pertumbuhan.getLingkar_kepala().toString());
+        holder.txt_lingkar_kepala_pertumbuhan.setText("Lingkar Kepala : " + pertumbuhan.getLingkar_kepala().toString() + " cm");
         if (sessionManager.getGenderAnak().equals("Perempuan")) {
             holder.linear_decoration.setBackgroundColor(Color.parseColor("#FF4081"));
             holder.txt_nama_pertumbuhan.setTextColor(Color.parseColor("#FF4081"));
@@ -83,8 +85,8 @@ public class AdapterPertumbuhan extends RecyclerView.Adapter<AdapterPertumbuhan.
 
     }
 
-    public void add(Double bb, Double tb, Double lk, String bbu, String pbu, String bbpb, String lku ){
-        data_pertumbuhan.add(new Pertumbuhan(bb,tb,lk,bbu,pbu,bbpb,lku));
+    public void add(Double bb, Double tb, Double lk, String bbu, String pbu, String bbpb, String lku, String tanggal_pengukuran ){
+        data_pertumbuhan.add(new Pertumbuhan(bb,tb,lk,bbu,pbu,bbpb,lku, tanggal_pengukuran));
     }
 
     @Override

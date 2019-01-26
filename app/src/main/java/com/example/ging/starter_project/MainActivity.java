@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.example.ging.starter_project.util.SessionManager;
 
@@ -98,6 +99,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         }
         return false;
     }
+
+
 
     public void changeMenu(int item) {
         BottomNavigationView navigation = findViewById(R.id.navigation);

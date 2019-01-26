@@ -68,6 +68,7 @@ public class AdapterProfile extends RecyclerView.Adapter<AdapterProfile.MyViewHo
         else {
             holder.img_anak.setBackgroundResource(R.drawable.girl);
         }
+
         holder.btn_lihat_pertumbuhan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

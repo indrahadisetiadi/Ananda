@@ -2,7 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:fab="http://schemas.android.com/apk/res-auto">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/pertumbuhan_recycleview"
@@ -11,15 +11,44 @@
         android:scrollbars="vertical"
         android:visibility="visible"/>
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/btn_add_pertumbuhan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="10dp"
-        android:src="@drawable/add"
-        app:borderWidth="0dp"
-        android:backgroundTint="@color/colorPrimaryDark"/>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu_pertumbuhan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        fab:menu_icon="@drawable/menu"
+        fab:menu_animationDelayPerItem="0"
+        fab:menu_colorNormal="@color/colorPrimaryDark"
+        fab:menu_colorPressed="@color/dot_dark_screen1"
+        fab:menu_colorRipple="@color/dot_dark_screen1"
+        fab:menu_labels_hideAnimation="@anim/jum_from_down"
+        fab:menu_labels_showAnimation="@anim/jum_from_down"
+        fab:menu_labels_style="@style/MenuLabelsStyle">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/btn_add_pertumbuhan"
+            style="@style/MenuButtonsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add_contact"
+            fab:fab_label="Tambah Data Anak" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/btn_informasi_pertumbuhan"
+            style="@style/MenuButtonsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/information"
+            fab:fab_label="Anjuran Gizi" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
 </FrameLayout>
 
 
